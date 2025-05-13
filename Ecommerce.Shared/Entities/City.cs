@@ -17,7 +17,6 @@ namespace Ecommerce.Shared.Entities
         [MaxLength(100)]
         public string Name { get; set; }
 
-
         public State State { get; set; }
 
         public int StateId { get; set; }
