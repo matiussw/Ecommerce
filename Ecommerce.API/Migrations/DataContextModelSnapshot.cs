@@ -21,6 +21,7 @@ namespace Ecommerce.API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+<<<<<<< HEAD
             modelBuilder.Entity("Ecommerce.Shared.Entities.City", b =>
                 {
                     b.Property<int>("Id")
@@ -47,6 +48,8 @@ namespace Ecommerce.API.Migrations
                     b.ToTable("Cities");
                 });
 
+=======
+>>>>>>> cb0bdcc138b7856e9375df06e0075ae12405c89e
             modelBuilder.Entity("Ecommerce.Shared.Entities.Country", b =>
                 {
                     b.Property<int>("Id")
@@ -67,6 +70,7 @@ namespace Ecommerce.API.Migrations
 
                     b.ToTable("Countries");
                 });
+<<<<<<< HEAD
 
             modelBuilder.Entity("Ecommerce.Shared.Entities.State", b =>
                 {
@@ -125,6 +129,8 @@ namespace Ecommerce.API.Migrations
                 {
                     b.Navigation("Cities");
                 });
+=======
+>>>>>>> cb0bdcc138b7856e9375df06e0075ae12405c89e
 #pragma warning restore 612, 618
         }
     }

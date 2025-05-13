@@ -49,13 +49,19 @@ namespace Ecommerce.API.Controllers
         [HttpGet]
         public async Task<ActionResult> Get()
         {
+<<<<<<< HEAD
             return Ok(await _context.Countries.Include(c => c.States).ToListAsync());
+=======
+
+            return Ok(await _context.Countries.ToListAsync());
+>>>>>>> cb0bdcc138b7856e9375df06e0075ae12405c89e
         }
 
         [HttpPost]
 
         public async Task<ActionResult> Post(Country country)
         {
+<<<<<<< HEAD
             try
             {
                 _context.Update(country);
@@ -76,6 +82,11 @@ namespace Ecommerce.API.Controllers
                 return BadRequest(ex.Message);
 
             }
+=======
+            _context.Add(country);
+            await _context.SaveChangesAsync();
+            return Ok(country);
+>>>>>>> cb0bdcc138b7856e9375df06e0075ae12405c89e
         }
 
     }

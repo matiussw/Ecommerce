@@ -1,5 +1,8 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.ComponentModel;
+=======
+>>>>>>> cb0bdcc138b7856e9375df06e0075ae12405c89e
 using System.ComponentModel.DataAnnotations;
 
 namespace Ecommerce.Shared.Entities
@@ -15,6 +18,7 @@ namespace Ecommerce.Shared.Entities
         [MaxLength(100)]
         public string Name { get; set; }
 
+<<<<<<< HEAD
 
         public ICollection<State> States { get; set; }
 
@@ -22,5 +26,7 @@ namespace Ecommerce.Shared.Entities
         [Display(Name ="Estados/Departamentos")]
         public int StatesNumber =>States==null? 0:States.Count(); 
 
+=======
+>>>>>>> cb0bdcc138b7856e9375df06e0075ae12405c89e
     }
 }
