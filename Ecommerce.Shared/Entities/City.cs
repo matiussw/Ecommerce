@@ -21,5 +21,8 @@ namespace Ecommerce.Shared.Entities
 
         public int StateId { get; set; }
 
+
+        public ICollection<User> ? Users{ get; set; }
+
     }
 }

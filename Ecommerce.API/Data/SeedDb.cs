@@ -23,9 +23,7 @@ namespace Ecommerce.API.Data
         {
            
             
-            if (!_context.Countries.Any())
-            
-            {
+            if (!_context.Countries.Any()) {
                 _context.Countries.Add(new Country
                 {
                     Name = "Colombia",
